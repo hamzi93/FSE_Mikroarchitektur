@@ -19,7 +19,7 @@ Da sowohl Subjekt, als auch Beobachter abstrakt sind, muss man bei konkreten Anw
 
 ![beobachter_uml](images/beobachter_uml.png)
 
-Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Observer Übung](/Observer_Uebung)
+Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Observer Übung](Observer_Uebung)
 
 ## Strategie (Strategy)
 
@@ -27,7 +27,7 @@ Das Muster Strategie ist ein objektbasiertes Verhaltensmuster und definiert eine
 
 ![strategie_uml](images/strategie_uml.png)
 
-Beispielcode aus dem Unterricht: [Strategy Übung](/StrategyDemo1/src)
+Beispielcode aus dem Unterricht: [Strategy Übung](StrategyDemo1)
 
 ## Erbauer (Builder)
 
@@ -35,7 +35,7 @@ Das Builder-Pattern wird genutzt, wenn die Konstruktion eines komplexen Objektes
 
 ![erbauer_uml](images/erbauer_uml.png)
 
-Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren und UML-Diagramm: [Builder Übung](/Erbauer_Uebung)
+Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren und UML-Diagramm: [Builder Übung](Erbauer_Uebung)
 
 ## Zuständigkeitskette (Chain of Responsibility)
 
@@ -83,7 +83,7 @@ public static void main(String[] args){
 
 ```
 
-Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Chain of Responsibility Übung](/Chain_of_Responsibility)
+Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Chain of Responsibility Übung](Chain_of_Responsibility)
 
 ## Schablonenmethode (Template Method)
 
@@ -91,4 +91,4 @@ Definiert das Skelett eines Algorithmus in einer Operation und delegiert einzeln
 
 ![schablonenmethode_uml](images/schablonenmethode_uml.png)
 
-Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Template Method Übung](/Template_Method_Uebung)
+Beispielcode aus dem Youtube Tutorial mit eigenen Kommentaren: [Template Method Übung](Template_Method_Uebung)
