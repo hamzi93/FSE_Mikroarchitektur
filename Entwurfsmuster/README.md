@@ -99,6 +99,8 @@ Beispielcode aus dem Unterricht anhand vom Passwort Manager: [Decorator Übung](
 
  ## Adapter
 
-Passt die Schnittstelle einer Klasse an eine andere von ihren Klienten erwartete Schnittstelle an. Es gibt einen Klienten (Main), also der Programmteil der die Klasse mit einer bestimmten Schnittstelle verwendet. Auf der anderen Seite steht eine neue Klasse die zwar die selbe Funktionalität hat, aber eine andere Schnittstelle als die die der Klient bisher verwendet hat. So muß es eine weitere Klasse geben die zwischen ihnen vermittelt. Dies ist die Adapterklasse, die von der bisher verwendeten Klasse abgeleitet wird und als ein neues Attribut ein Objekt der zu adaptierenden Klasse enthält.
+Passt die Schnittstelle einer Klasse an eine andere von ihren Klienten erwartete Schnittstelle an. Das heißt es wird für zwei Klassen die nicht miteinander kommunizieren können eine Schnittstelle erschaffen (wie bei einem richtigen Adapter). Es gibt einen Klienten, also der Programmteil der die Klasse mit einer bestimmten Schnittstelle verwendet. Auf der anderen Seite steht eine neue Klasse die zwar die selbe Funktionalität hat, aber eine andere Schnittstelle als die die der Klient bisher verwendet hat. So muß es eine weitere Klasse geben die zwischen ihnen vermittelt. Dies ist die Adapterklasse, die von der bisher verwendeten Klasse abgeleitet wird und als ein neues Attribut ein Objekt der zu adaptierenden Klasse enthält.
 
 ![adapter_uml](images/adapter_uml.png)
+
+Beispielcode aus dem Youtube Tutorial: [Adapter Übung](Adapter_Uebung)
