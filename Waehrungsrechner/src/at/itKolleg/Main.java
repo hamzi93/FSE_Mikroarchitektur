@@ -1,5 +1,8 @@
 package at.itKolleg;
 
+import at.itKolleg.builder.Euro2DollarBuilder;
+import at.itKolleg.builder.WRBuilder;
+import at.itKolleg.builder.WRDirector;
 import at.itKolleg.chainAndTemplate.Euro2DollarBearbeiter;
 import at.itKolleg.chainAndTemplate.Euro2YenBearbeiter;
 import at.itKolleg.decorator.FixGebuehrenDecorator;
@@ -33,6 +36,27 @@ public class Main {
         System.out.println(betrag + " in Euro = " + inDollar3 + " in Dollar inkl. Gebühren");
         double inYen3 = kette3.umrechnen("Euro2Yen",betrag);
         System.out.println(betrag + " in Euro = " + inYen3 + " in Yen inkl. Gebühren");
+        System.out.println();
+
+        //Builer
+        WRBuilder wrBuilder = new Euro2DollarBuilder();
+        WRDirector director = new WRDirector(wrBuilder);
+        director.makeWR();
+        WR wr = director.getWR();
+
+        double inDollar4 = wr.umrechnen("Euro2Dollar",betrag);
+        System.out.println(betrag + " in Euro = " + inDollar4 + " in Dollar");
+
+        double inYen4 = wr.umrechnen("Euro2Yen",betrag);
+        System.out.println(betrag + " in Euro = " + inYen4 + " in Yen");
+
+        wr.setNaechsterWr(new Euro2YenBearbeiter()); //hinzufügen von nächster WR
+        double inYen5 = wr.umrechnen("Euro2Yen",betrag);
+        System.out.println(betrag + " in Euro = " + inYen5 + " in Yen");
+
+        wr.setFaktor(1.10); //Faktor ändern
+        inDollar4 = wr.umrechnen("Euro2Dollar",betrag);
+        System.out.println(betrag + " in Euro = " + inDollar4 + " in Dollar");
 
     }
 }
