@@ -22,4 +22,7 @@ public abstract class UmrechnungsDecorator extends WR {
     public boolean zustaendig(String variante) {
         return false;
     }
+
+    public void setFaktor(double faktor) {
+    }
 }
