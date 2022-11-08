@@ -1,12 +1,20 @@
 package at.itKolleg;
 
-public abstract class WR implements IUmrechnen{
+
+import at.itKolleg.builder.WRPlan;
+
+public abstract class WR implements IUmrechnen, WRPlan {
 
     private WR naechsterWr;
 
     public WR(WR naechsterWr){
         this.naechsterWr = naechsterWr;
     }
+
+    public WR(){
+        this.naechsterWr = null;
+    }
+
 
     public double umrechnen(String variante, double betrag){
         // template
@@ -23,4 +31,10 @@ public abstract class WR implements IUmrechnen{
     }
 
 
+
+    public abstract void setFaktor(double faktor);
+
+    public void setNaechsterWr(WR naechsterWr){
+        this.naechsterWr = naechsterWr;
+    }
 }

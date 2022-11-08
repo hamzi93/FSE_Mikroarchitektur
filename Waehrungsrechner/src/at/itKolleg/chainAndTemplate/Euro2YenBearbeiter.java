@@ -6,17 +6,33 @@ import java.util.Objects;
 
 public class Euro2YenBearbeiter extends WR {
 
+    private double faktor;
+
     public Euro2YenBearbeiter(WR umrechnungsBearbeiter) {
         super(umrechnungsBearbeiter);
+        this.faktor = 148.86;
+    }
+
+    public Euro2YenBearbeiter(){
+        super();
+        this.faktor = 148.86;
+    }
+
+    @Override
+    public void setFaktor(double faktor) {
+        this.faktor = faktor;
     }
 
     @Override
     public double getFaktor() {
-        return 148.86;
+        return this.faktor;
     }
 
     @Override
     public boolean zustaendig(String variante) {
         return Objects.equals(variante, "Euro2Yen");
     }
+
 }
+
+
