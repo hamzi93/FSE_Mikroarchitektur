@@ -1,0 +1,120 @@
+2022-11-09 23:55:47.188
+Ausgangsbetrag: 123,20
+Ausgangswährung: null
+Zielwährung: null
+Zielbetrag: 18339,55
+=========================
+2022-11-09 23:55:47.215
+Ausgangsbetrag: 123,20
+Ausgangswährung: null
+Zielwährung: null
+Zielbetrag: 18339,55
+=========================
+2022-11-09 23:57:58.009
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-09 23:57:58.026
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:02:04.524
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:02:04.539
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:07:03.932
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:08:21.125
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:08:21.142
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:08:21.142
+Ausgangsbetrag: 123,30
+Ausgangswährung: EUR
+Zielwährung: USD
+Zielbetrag: 124,53
+=========================
+2022-11-10 00:12:54.863
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:12:54.879
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:12:54.88
+Ausgangsbetrag: 123,30
+Ausgangswährung: EUR
+Zielwährung: USD
+Zielbetrag: 124,53
+=========================
+2022-11-10 00:13:45.38
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:13:45.398
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:13:45.399
+Ausgangsbetrag: 123,30
+Ausgangswährung: EUR
+Zielwährung: USD
+Zielbetrag: 124,53
+=========================
+2022-11-10 00:14:08.356
+Ausgangsbetrag: 123,30
+Ausgangswährung: EUR
+Zielwährung: USD
+Zielbetrag: 124,53
+=========================
+2022-11-10 00:16:02.996
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:16:03.013
+Ausgangsbetrag: 123,20
+Ausgangswährung: EUR
+Zielwährung: YEN
+Zielbetrag: 18339,55
+=========================
+2022-11-10 00:16:03.014
+Ausgangsbetrag: 123,30
+Ausgangswährung: EUR
+Zielwährung: USD
+Zielbetrag: 124,53
+=========================

@@ -1,5 +1,6 @@
 package at.itKolleg;
 
+import at.itKolleg.adapter.Sammelumrechnung;
 import at.itKolleg.builder.Euro2DollarBuilder;
 import at.itKolleg.builder.WRBuilder;
 import at.itKolleg.builder.WRDirector;
@@ -7,6 +8,8 @@ import at.itKolleg.chainAndTemplate.Euro2DollarBearbeiter;
 import at.itKolleg.chainAndTemplate.Euro2YenBearbeiter;
 import at.itKolleg.decorator.FixGebuehrenDecorator;
 import at.itKolleg.decorator.VariableGebuehrenDecorator;
+import at.itKolleg.observer.AObserver;
+import at.itKolleg.observer.LogObserver;
 
 public class Main {
 
@@ -58,5 +61,21 @@ public class Main {
         inDollar4 = wr.umrechnen("Euro2Dollar",betrag);
         System.out.println(betrag + " in Euro = " + inDollar4 + " in Dollar");
 
+        //Adapter
+        double [] betreage = {50,50,100,200};
+        Sammelumrechnung sammelumrechnung = new Sammelumrechnung();
+        System.out.println(sammelumrechnung.sammelumrechnen(betreage,"hi"));
+
+
+        //Observer
+        WR tYen = new Euro2YenBearbeiter();
+        WR tDollar = new Euro2DollarBearbeiter();
+        AObserver observer1 = new LogObserver(tYen);
+        tYen.register(observer1);
+        tDollar.register(observer1);
+        tYen.umrechnen("Euro2Yen", 123.20);
+
+        tYen.setNaechsterWr(tDollar);
+        tYen.umrechnen("Euro2Dollar", 123.30);
     }
 }
