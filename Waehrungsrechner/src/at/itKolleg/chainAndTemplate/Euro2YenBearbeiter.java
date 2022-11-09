@@ -11,11 +11,15 @@ public class Euro2YenBearbeiter extends WR {
     public Euro2YenBearbeiter(WR umrechnungsBearbeiter) {
         super(umrechnungsBearbeiter);
         this.faktor = 148.86;
+        this.ausgangsWaehrung = "EUR";
+        this.zielWeahrung = "YEN";
     }
 
     public Euro2YenBearbeiter(){
         super();
         this.faktor = 148.86;
+        this.ausgangsWaehrung = "EUR";
+        this.zielWeahrung = "YEN";
     }
 
     @Override

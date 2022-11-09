@@ -12,11 +12,15 @@ public class Euro2DollarBearbeiter extends WR {
     public Euro2DollarBearbeiter(WR umrechnungsBearbeiter) {
         super(umrechnungsBearbeiter);
         this.faktor = 1.01;
+        this.ausgangsWaehrung = "EUR";
+        this.zielWeahrung = "USD";
     }
 
     public Euro2DollarBearbeiter(){
         super();
         this.faktor = 1.01;
+        this.ausgangsWaehrung = "EUR";
+        this.zielWeahrung = "USD";
     }
 
     @Override
