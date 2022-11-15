@@ -36,6 +36,7 @@ public abstract class WR implements IUmrechnen, WRPlan, Subject {
             notifyObserver();
             return result;
         }
+        this.zielBetrag = 0;
         //chain
         if (naechsterWr != null) {
             return naechsterWr.umrechnen(variante, betrag);

@@ -10,11 +10,10 @@ public class LogObserver extends AObserver{
     private static int observerIDTracker = 0;
     private int observerID;
 
-    public LogObserver(Subject subject) {
-        super(subject);
+    public LogObserver() {
+
         this.observerID = observerIDTracker++;
         System.out.println("New Observer " + this.observerID);
-        subject.register(this);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package at.itKolleg;
 
-import at.itKolleg.adapter.Sammelumrechnung;
+import at.itKolleg.adapter.SammelumrechnungAdapter;
 import at.itKolleg.builder.Euro2DollarBuilder;
 import at.itKolleg.builder.WRBuilder;
 import at.itKolleg.builder.WRDirector;
@@ -62,15 +62,15 @@ public class Main {
         System.out.println(betrag + " in Euro = " + inDollar4 + " in Dollar");
 
         //Adapter
-        double [] betreage = {50,50,100,200};
-        Sammelumrechnung sammelumrechnung = new Sammelumrechnung();
-        System.out.println(sammelumrechnung.sammelumrechnen(betreage,"hi"));
+        double [] betreage = {50.3,50,100,200};
+        SammelumrechnungAdapter sammelumrechnung = new SammelumrechnungAdapter(new Euro2DollarBearbeiter(new Euro2YenBearbeiter()));
+        System.out.println(sammelumrechnung.sammelumrechnen(betreage,"Euro2Yen"));
 
 
         //Observer
         WR tYen = new Euro2YenBearbeiter();
         WR tDollar = new Euro2DollarBearbeiter();
-        AObserver observer1 = new LogObserver(tYen);
+        AObserver observer1 = new LogObserver();
         tYen.register(observer1);
         tDollar.register(observer1);
         tYen.umrechnen("Euro2Yen", 123.20);

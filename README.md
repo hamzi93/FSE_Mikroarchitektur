@@ -19,7 +19,15 @@ Die Aufgabe ist es, sich in das Thema Entwurfsmuster einzuarbeiten. Dabei soll m
 
 Alle genannten Muster sollen an Hand einer minimalen Aufgabenstellung selbst implementiert und dokumentiert werden.
 
+Alle Übungen wurden hier erarbeitet: [Entwurfsmuster](Entwurfsmuster).
 
+## Währungsrechner
+
+Der Währungsrechner beinhaltet verschiedene Entwurfsmuster die ich selber implementieren musste. Im dazugefügtem Readme befindet sich das UML Diagramm. Der Quellcode ist hier zu finden: [Währungsrechner](Waehrungsrechner).
+
+## Designprinzipien
+
+Hier gehe ich besonders auf "SOLID", "DRY", "YAGNI" und "KISS" Prinzipien näher ein und stelle diese vor: [Designprinzipien](Designprinzipien).
 
 
 

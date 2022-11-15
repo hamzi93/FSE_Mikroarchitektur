@@ -1,33 +1,23 @@
 package at.itKolleg.adapter;
 
+import at.itKolleg.ISammelumrechnung;
 import at.itKolleg.IUmrechnen;
 
-public class SammelumrechnungAdapter implements IUmrechnen {
+public class SammelumrechnungAdapter implements ISammelumrechnung {
 
     Sammelumrechnung sammelumrechnung;
-    double betrag;
-    double result;
+    IUmrechnen umrechner;
 
 
-    SammelumrechnungAdapter(double [] betreage, String variante){
+    public SammelumrechnungAdapter(IUmrechnen umrechner){
         this.sammelumrechnung = new Sammelumrechnung();
-        this.betrag = this.sammelumrechnung.sammelumrechnen(betreage, variante);
-        this.result = umrechnen(variante, this.betrag);
+        this.umrechner = umrechner;
     }
 
 
     @Override
-    public double umrechnen(String variante, double betrag) {
-        return 0;
-    }
-
-    @Override
-    public double getFaktor() {
-        return 0;
-    }
-
-    @Override
-    public boolean zustaendig(String variante) {
-        return false;
+    public double sammelumrechnen(double[] betraege, String variante) {
+        double betrag = this.sammelumrechnung.sammelumrechnen(betraege, variante);
+        return this.umrechner.umrechnen(variante, betrag);
     }
 }
